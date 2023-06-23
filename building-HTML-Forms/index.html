@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+
+        <div>
+            <label for="firstName">First name:*</label><br>
+            <input type="text" name="name" id="firstName" required>
+        </div>
+
+        <div>
+            <label for="lastName">Last name:*</label><br>
+            <input type="text" name="lname" id="lastName" required>
+        </div>
+
+        <div>
+            <label for="email">Your E-mail:</label><br>
+            <input type="email" name="mail" id="email" required>
+        </div>
+
+        <div>
+            <label for="status">Your status:</label>
+            <select name="_status" id="status">
+                <option value="">--Please choose your status</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="guest">Guest</option>
+            </select>
+        </div>
+
+        
+        <aside>
+            <p>Choose your favourite programming language</p>
+
+            <div>
+                <label for="html">HTML</label>
+                <input type="radio" name="language" id="html">
+            </div>
+
+            <div>
+                <label for="css">CSS</label>
+                <input type="radio" name="language" id="css">
+            </div>
+
+            <div>
+                <label for="javaScript">JavaScript</label>
+                <input type="radio" name="language" id="javaScript">
+            </div>
+        </aside>
+
+        <div>
+            <label for="textArea">Comments</label>
+            <textarea name="" id="textArea" cols="20" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="date">Current date</label>
+            <input type="date" name="_date" id="date">
+        </div>
+
+        <div>
+            <label for="signUp">Sign up for newsletter</label>
+            <input type="checkbox" name="sign" id="signUp"><br>
+            <label for="termsAndConditions">Agree to terms and conditions</label>
+            <input type="checkbox" name="sign" id="termsAndConditions"><br>
+            <input type="submit" value="Submit">
+        </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
