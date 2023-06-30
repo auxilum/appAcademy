@@ -1,6 +1,6 @@
 .box1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .appAc {
@@ -34,6 +34,11 @@ nav {
   margin-bottom: 4px;
 }
 
+main {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 h1 {
   width: 400px;
   text-align: left;
@@ -44,4 +49,75 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin: 6px;
+}
+
+.logo1 {
+  border: solid 2px black;
+  padding: 4px;
+  margin: 6px;
+}
+
+.box4 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box5 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  border: solid 2px black;
+  width: fit-content;
+  height: 20vh;
+}
+
+h3 {
+  padding-bottom: -41px;
+}
+
+p {
+  padding-top: -20px;
+}
+
+.box6 {
+  display: flex;
+  margin-top: -30px;
+}
+
+h5 {
+  position: relative;
+  left: 50px;
+  top: 15px;
+}
+
+ul {
+  list-style-type: "-";
+  font-size: medium;
+}
+
+.logo2 {
+  border: solid 5px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
 }
