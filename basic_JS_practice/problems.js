@@ -140,7 +140,16 @@ function isSubString(searchString, subString) {
     `true` if `subString` is a part of the`searchString`, regardless of upper
     or lower case, and `false` if otherwise. */
     // Your code here
+    let search = searchString.toLowerCase();
+    let sub = subString.toLowerCase();
+    if (sub.includes(search) === true) {
+        console.log("True");
+    } else {
+        console.log("False");
+    }
 };
+
+isSubString('plAva', 'Plava boja zaborava');
 
 function aCounter(word) {
     /* Takes in a word and returns the number of a's within that word. Counts
@@ -161,7 +170,16 @@ function aCounter(word) {
     return count;
     */
     // Your code here
+    let counter = 0;
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] === 'a' || word[i] === 'A') {
+            counter += 1;
+        }
+    }
+    console.log ("In your word there is " + counter + " letters a");
 };
+
+aCounter("sdfgggggg");
 
 module.exports = {
     divideByThree,
