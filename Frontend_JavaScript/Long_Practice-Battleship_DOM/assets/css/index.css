@@ -1,0 +1,22 @@
+/* Your code here */
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#flex-container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80vh;
+}
+
+.container {
+  flex: 0 10vw;
+  height: 50px;
+  border: 1px solid black;
+  margin: 2px;
+  background-color: aqua;
+}
