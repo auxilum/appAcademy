@@ -39,7 +39,6 @@ let mySimpleReduce = function (arr, cb) {
   for (let i = 1; i < arr.length; i++) {
     let ele = arr[i];
     accu = cb(accu, ele);
-    //console.log(final);
   }
   return accu;
 };
