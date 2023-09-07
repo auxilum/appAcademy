@@ -19,7 +19,21 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 function sandwichMaker() {
   // Your code here
+  let sentence = "One sandwich with tomato";
+  let sandwich = (element) => {
+    sentence += ` and ${element}`;
+    console.log(sentence);
+  };
+  return sandwich;
 }
+
+let sandwich = sandwichMaker(); // => returns a function
+sandwich("spinach"); // => "One sandwich with tomato and spinach"
+sandwich("jelly"); // => "One sandwich with tomato and spinach and jelly"
+sandwich("bread"); // => "One sandwich with tomato and spinach and jelly and bread"
+
+let sandwich2 = sandwichMaker(); // => returns a function
+sandwich2("pb"); // => "One sandwich with tomato and pb"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
